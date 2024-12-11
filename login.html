@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <script>
+            window.onload = function() {
+                var btn = document.getElementById("login");
+                btn.onclick = login;
+            }
+
+            function login() {
+                var username = document.getElementById("username").value;
+                var password = document.getElementById("password").value;
+                if(username == "") 
+                    alert("username can't be empty");
+                else if(password == "")
+                    alert("password can't be empty");
+                else {
+                    
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Login</h1>
+        
+        <label>Username</label>
+        <input id="username"/>
+        <br/>
+
+        <label>Password</label>
+        <input type="password" id="password"/>
+        <br/>
+
+        <button id="login">login</button>
+    </body>
+</html>

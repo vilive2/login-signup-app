@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Profile</title>
+        <script>
+            window.onload = function() {
+                document.getElementById("name").innerHTML = "";
+                document.getElementById("email").innerHTML = "";
+                document.getElementById("username").innerHTML = "";
+                document.getElementById("photo").src = "profile.png";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Profile</h1>
+
+        <label>Photo</label>
+        <img src="#" id="photo" />
+        <br/>
+
+        <label>Name :</label>
+        <label id="name"></label>
+        <br/>
+
+        <label>Username :</label>
+        <label id="username"></label>
+        <br/>
+
+        <label>Email :</label>
+        <label id="email"></label>
+        <br/>
+    </body>
+</html>

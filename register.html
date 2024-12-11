@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <script>
+            window.onload = function() {
+                var btn = document.getElementById("submit");
+                btn.onclick = register;
+            }
+
+            function register() {
+                var name = document.getElementById("name").value;
+                var username = document.getElementById("username").value;
+                var email = document.getElementById("email").value;
+                var password = document.getElementById("password").value;
+                if(username == "") 
+                    alert("username can't be empty");
+                else if(email == "")
+                    alert("email can't be empty");
+                else if(password == "")
+                    alert("password can't be empty");
+                else {
+
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Register</h1>
+        
+        <label>Photo</label>
+        <input type="file">
+        <br/>
+
+        <label>Name</label>
+        <input id="name"/>
+        <br/>
+
+        <label>Username</label>
+        <input id="username"/>
+        <br/>
+
+        <label>Email</label>
+        <input type="email" id="email"/>
+        <br/>
+
+        <label>Password</label>
+        <input type="password" id="password"/>
+        <br/>
+
+        <button id="submit">Submit</button>
+
+    </body>
+</html>
